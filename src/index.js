@@ -9,7 +9,6 @@
  */
 
 function calculateFathersAsTwiceElder(fathersAge, sonsAge) {
-  let years = 0;
   if (fathersAge - sonsAge < 15 || sonsAge < 0) {
     return NaN;
   }
@@ -38,12 +37,12 @@ switch (Math.abs(res)) {
 
 if (Number.isNaN(res)) {
   console.log("Ви ввели неправильну інформацію! Спробуйте ще раз.");
-}
-
-if (res < 0) {
-  console.log(`Батько був старшим за сина ${res * -1} ${strYear} тому`);
-} else if (res > 0) {
-  console.log(`Батько буде старшим за сина вдічі через ${res} ${strYear}`);
 } else {
-  console.log("Батько зараз двічі старший за сина");
+  if (res < 0) {
+    console.log(`Батько був старшим за сина ${res * -1} ${strYear} тому`);
+  } else if (res > 0) {
+    console.log(`Батько буде старшим за сина вдічі через ${res} ${strYear}`);
+  } else {
+    console.log("Батько зараз двічі старший за сина");
+  }
 }
