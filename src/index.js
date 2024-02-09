@@ -7,7 +7,6 @@
  * @param {number} sonsAge - Вік сина.
  * @returns {string} - Повідомлення, що вказує через скільки років батько буде (був) вдвічі старший за сина.
  */
-//debugger 
 
 function calculateFathersAsTwiceElder(fathersAge, sonsAge) {
   let years = 0;
